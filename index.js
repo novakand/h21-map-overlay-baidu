@@ -9,7 +9,7 @@
  
 (function (root, factory) {
     if (typeof exports === 'object') {
-        module.exports = factory();
+        module.exports = { default: factory(), Overlay: factory() }
     } else if (typeof define === 'function' && define.amd) {
         define(factory);
     } else {
